@@ -1,0 +1,43 @@
+
+#1st Check if 1st and last are same
+number_x=[10,20,30,40,10]
+number_y=[75,35,45,89,65]
+if number_x[0]==number_x[4]:
+ print("Result is True")
+
+if number_y[0]==number_y[4]:
+    print("Result is True")
+else:
+    print("Result is False")
+
+#2nd Display numbers divided by 5 from a list
+x=[10,15,20,21,23]
+result = list(filter(lambda t:t%5==0,x))
+print('Result is',result )
+
+#3rd count of given substring from a string
+str_x="emma is good girl.emma age is 19"
+print("Number of occurance of emaa name: ",str_x.count("emma"))
+
+#4th Check palindrome number
+n = int(input("Enter number:"))
+temp = n  
+rev = 0  
+while(n > 0):  
+    dig = n % 10  
+    rev = rev * 10 + dig  
+    n = n // 10  
+if(temp == rev):  
+    print("given value is a palindrome number")  
+else:  
+    print("given value is not a palindrome number")  
+
+#5th to exact each digit from a integer in the reverse order
+n= 7536
+rev = 0
+
+while (n>0):
+ a= n%0
+rev = rev * 10 + a
+n= n// 10
+print(rev)
