@@ -30,7 +30,7 @@ else:
     print("given value is not a palindrome number")  
 
 #5th to exact each digit from a integer in the reverse order
-n= 7536
+n= int(input("Enter number:"))
 rev = 0
 
 while (n>0):
